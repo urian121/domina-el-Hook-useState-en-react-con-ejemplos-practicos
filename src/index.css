@@ -12,6 +12,16 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.active {
+  background-color: #f0f0f0; /* Cambia el color de fondo cuando el elemento está activo */
+  font-weight: bold; /* Hace que el texto sea más grueso para indicar que está activo */
+}
 
 a {
   font-weight: 500;
