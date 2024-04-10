@@ -11,7 +11,12 @@ const InputTexto = () => {
   return (
     <div>
       {/* Campo de texto controlado */}
-      <input type="text" value={texto} onChange={handleChange} />
+      <input
+        type="text"
+        className="form-control"
+        value={texto}
+        onChange={handleChange}
+      />
       {/* Mostrar el texto ingresado */}
       <p>Texto ingresado: {texto}</p>
     </div>

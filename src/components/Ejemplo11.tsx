@@ -23,16 +23,17 @@ const ListaMensajesEntrada = () => {
     <div>
       <input
         type="text"
+        className="form-control"
         value={mensaje}
         placeholder="Ingrese un mensaje"
         onChange={manejarCambioMensaje}
       />
       <button onClick={agregarMensaje}>Agregar Mensaje</button>
-      <ul>
+      <ol>
         {listaMensajes.map((m) => (
           <li key={m.id}>{m.mensaje}</li>
         ))}
-      </ul>
+      </ol>
     </div>
   );
 };

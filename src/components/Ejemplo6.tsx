@@ -14,17 +14,19 @@ const Menu = () => {
   };
 
   return (
-    <div>
-      <ul>
-        {menuItems.map((item) => (
-          <li key={item.id} className={activeItem === item.id ? "active" : ""}>
-            <a onClick={() => handleItemClick(item.id)} href="#">
-              {item.label}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <ul className="list-group list-group-flush">
+      {menuItems.map((item) => (
+        <li
+          key={item.id}
+          className={
+            "list-group-item " + (activeItem === item.id ? "active" : "")
+          }>
+          <a onClick={() => handleItemClick(item.id)} href="#">
+            {item.label}
+          </a>
+        </li>
+      ))}
+    </ul>
   );
 };
 

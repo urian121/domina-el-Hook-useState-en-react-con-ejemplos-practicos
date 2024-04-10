@@ -27,7 +27,10 @@ const SelectorDePais = () => {
   return (
     <div>
       <h2>Selecciona un país de América:</h2>
-      <select value={paisSeleccionado} onChange={handleCountryChange}>
+      <select
+        className="form-select"
+        value={paisSeleccionado}
+        onChange={handleCountryChange}>
         {countries.map((country, index) => (
           <option key={index} value={country}>
             {country}

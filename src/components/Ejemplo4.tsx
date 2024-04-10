@@ -7,6 +7,7 @@ const Message = () => {
     <div>
       <input
         type="text"
+        className="form-control"
         value={message}
         placeholder="Enter a message"
         onChange={(e) => setMessage(e.target.value)}
