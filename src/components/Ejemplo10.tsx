@@ -19,7 +19,7 @@ const ComponenteUpdate = () => {
 
   return (
     <div>
-      <h2>Array:</h2>
+      <h2>Agregar/Eliminar elementos en Array:</h2>
       <ul>
         {array.map((item, index) => (
           <li key={index}>{item}</li>

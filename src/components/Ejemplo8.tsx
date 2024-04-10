@@ -20,7 +20,9 @@ const MostrarEjemploTexto = () => {
 
   return (
     <form onSubmit={manejarEnvioFormulario} method="POST">
-      <label htmlFor="nombre">Nombre:</label>
+      <label htmlFor="nombre" className="float-start">
+        Nombre:
+      </label>
       <input
         type="text"
         className="form-control"
@@ -28,15 +30,18 @@ const MostrarEjemploTexto = () => {
         onChange={manejarCambioInput}
       />
       <br />
-      <label htmlFor="profesion">Profesión:</label>
+      <label htmlFor="profesion" className="float-start">
+        Profesión:
+      </label>
       <input
         type="text"
-        className="form-control"
+        className="form-control mb-2"
         name="profesion"
         onChange={manejarCambioInput}
       />
-      <h2>Se ingresó el nombre: {datos.nombre} </h2>
-      <h2>Se ingresó la profesión: {datos.profesion} </h2>
+      <code>
+        <h5>{datos && JSON.stringify(datos)}</h5>
+      </code>
       <button type="submit">Enviar</button>
     </form>
   );

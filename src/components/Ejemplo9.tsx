@@ -15,7 +15,7 @@ const ComponenteUpdate = () => {
 
   return (
     <div>
-      <h2>Objeto:</h2>
+      <h2>Actualizar Objeto:</h2>
       <p>Name: {state.name}</p>
       <p>Age: {state.age}</p>
       <button onClick={updateName}>Actualizar Nombre</button>

@@ -23,7 +23,7 @@ const ListaMensajesEntrada = () => {
     <div>
       <input
         type="text"
-        className="form-control"
+        className="form-control mb-3"
         value={mensaje}
         placeholder="Ingrese un mensaje"
         onChange={manejarCambioMensaje}

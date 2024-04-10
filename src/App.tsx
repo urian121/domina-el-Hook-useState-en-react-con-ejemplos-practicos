@@ -12,30 +12,56 @@ import Ejemplo11 from "./components/Ejemplo11";
 
 function App() {
   return (
-    <>
+    <div className="container">
       <h1>Domina el Hook useState con Ejemplos Prácticos</h1>
-      <Ejemplo1 />
-      <hr />
-      <Ejemplo2 />
-      <hr />
-      <Ejemplo3 />
-      <hr />
-      <Ejemplo4 />
-      <hr />
-      <Ejemplo5 />
-      <hr />
-      <Ejemplo6 />
-      <hr />
-      <Ejemplo7 />
-      <hr />
-      <Ejemplo8 />
-      <hr />
-      <Ejemplo9 />
-      <hr />
-      <Ejemplo10 />
-      <hr />
-      <Ejemplo11 />
-    </>
+      <div className="row">
+        <div className="col-md-6">
+          <Ejemplo1 />
+        </div>
+        <div className="col-md-6">
+          <Ejemplo2 />
+        </div>
+      </div>
+
+      <div className="row mt-5">
+        <div className="col-md-6">
+          <Ejemplo3 />
+        </div>
+        <div className="col-md-6">
+          <Ejemplo4 />
+        </div>
+      </div>
+
+      <div className="row mt-5">
+        <div className="col-md-6">
+          <Ejemplo5 />
+        </div>
+        <div className="col-md-6">
+          <Ejemplo6 />
+        </div>
+      </div>
+
+      <div className="row mt-5">
+        <div className="col-md-6">
+          <Ejemplo7 />
+        </div>
+        <div className="col-md-6">
+          <Ejemplo8 />
+        </div>
+      </div>
+
+      <div className="row mt-5">
+        <div className="col-md-4 border">
+          <Ejemplo9 />
+        </div>
+        <div className="col-md-4">
+          <Ejemplo10 />
+        </div>
+        <div className="col-md-4">
+          <Ejemplo11 />
+        </div>
+      </div>
+    </div>
   );
 }
 
